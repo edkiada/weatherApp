@@ -89,6 +89,12 @@
   gap: 1rem;
 }
 
+.current .currentCityDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .current > .temperature {
   width: 100%;
   display: flex;
@@ -126,6 +132,7 @@
   .current .currentCityDate {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
   .city {
     text-align: left;
