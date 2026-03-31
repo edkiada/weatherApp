@@ -5,7 +5,6 @@
   import weatherState from "../components/weatherState/weatherState.vue";
   import dailyPanel from "../components/dailyPanel/dailyPanel.vue";
   import hourlyPanel from "../components/hourlyPanel/hourlyPanel.vue";
-  import router from "../router"
 </script>
 
 <template>

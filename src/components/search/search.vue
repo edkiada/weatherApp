@@ -44,11 +44,11 @@
       <input class="field" v-model="searchQuery" placeholder="Search for a place..." />
       <div v-if="stores.cityData && stores.cityData.length > 0" class="cityList-container">
         <div v-for="city in stores.cityData" :key="city.id">
-        <button class="cityItem" @click="choiceCity(city.name, city.country, city.latitude, city.longitude)" >{{ city.name }} ({{ city.country }})</button>
+        <button class="cityItem" type="button" @click="choiceCity(city.name, city.country, city.latitude, city.longitude)" >{{ city.name }} ({{ city.country }})</button>
       </div>
       </div>
     </div>
-    <button class="searchButton" @click="getDataFromCity">Search</button>
+    <button class="searchButton" type="button" @click="getDataFromCity">Search</button>
   </div>
 </template>
 
