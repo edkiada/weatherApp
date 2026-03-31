@@ -1,0 +1,44 @@
+.dailyForecast {
+  margin: 1rem 0;
+}
+
+.dailyForecast > p {
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+.panelItem {
+  width: 6.5rem;
+  height: 11rem;
+  background-color: var(--Neutral700);
+  border: 1px solid var(--Neutral600);
+  margin: 0.3rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.weatherIcon {
+  width: 4rem;
+}
+
+.temperature {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 1000px) {
+  .dailyForecast {
+    margin: 0;
+  }
+}

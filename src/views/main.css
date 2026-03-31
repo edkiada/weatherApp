@@ -1,0 +1,79 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	width: 10rem;
+}
+
+.appContainer {
+  width: 90%;
+  margin: 2vh auto;
+}
+
+h1 {
+	color: var(--Neutral0);
+	font-family: 'Bricolage Grotesque', sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	padding: 2rem;
+}
+
+@media (min-width: 600px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem;
+	}
+	
+	h1, .search-box {
+		grid-column: 1 / 3;
+	}
+	
+	.current-weather {
+		grid-column: 1 / 2;
+	}
+	
+	.weekly-forecast {
+		grid-column: 1 / 3;
+	}
+	
+	.hourly-forecast {
+		grid-column: 2 / 3;
+		grid-row: 3 / 3;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.appContainer {
+		width: 90%;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: 5fr 2fr;
+		gap: 1.5rem;
+	}
+	
+	h1, .search-box {
+		grid-column: 1 / 3;
+	}
+	
+	.current-weather {
+		grid-column: 1 / 2;
+		margin-left: 2rem;
+	}
+	
+	.weekly-forecast {
+		grid-column: 1 / 2;
+		margin-left: 2rem;
+	}
+	
+	.hourly-forecast {
+		grid-column: 2 / 3;
+		grid-row: 3 / 6;
+	}
+}

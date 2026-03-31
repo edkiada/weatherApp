@@ -1,0 +1,55 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	width: 10rem;
+}
+
+.appContainer {
+  width: 90%;
+  margin: 2vh auto;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.error > p {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.errorIcon {
+  width: 3rem;
+}
+
+h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  padding: 1rem 0;
+  font-size: 3.5rem;
+}
+
+.retryButton {
+  display: flex;
+  align-items: center;
+  color: var(--Neutral0);
+  background-color: var(--Neutral600);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+
+.retryButton:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}

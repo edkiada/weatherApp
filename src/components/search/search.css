@@ -1,0 +1,91 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.searchField {
+  background-color: var(--Neutral700);
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1.1rem;
+}
+
+.field {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.8rem 0 0.8rem 3rem;
+  border: none;
+  background-color: var(--Neutral700);
+  color: var(--Neutral200);
+  border-radius: 0.8rem;
+}
+
+.field:focus {
+  outline: 1px solid var(--Neutral0);
+}
+
+.searchButton {
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: var(--Blue500);
+  color: var(--Neutral0);
+}
+
+.searchButton:hover {
+  cursor: pointer;
+}
+
+.cityList-container {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 120%;
+  background-color: var(--Neutral700);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--Neutral600);
+  box-shadow: 0 2rem 4rem var(--Neutral600);
+}
+
+.cityItem {
+  background-color: var(--Neutral700);
+  color: var(--Neutral0);
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.cityItem:hover {
+  background-color: var(--Neutral600);
+  cursor: pointer;
+}
+
+.searchButton:focus {
+  border: 3px double black;
+}
+
+@media (min-width: 600px) {
+  .search-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .searchField {
+    width: 30rem;
+    border-radius: 0.8rem;
+  }
+}
